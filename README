@@ -1,0 +1,11 @@
+This is a minimal wordpress plugin to demonstrate the problem with InnerBlocks.
+
+In WordPress 5.6, it behaves as expected.
+
+In WordPress 5.7, the odd behavior happens.
+
+Min Test is a block using InnerBlocks, and Trouble is a block that has content that appears and disappears if it is selected in the editor.
+
+In WordPress 5.7, clicking on the [+] inserter does not work every time if the Trouble block is selected.
+
+It appears to be based on the actual height of the block, as I also tested with a variant that used <span> instead of <div>, and adding a line-height stle for the appearing block triggered the insertion failure.
